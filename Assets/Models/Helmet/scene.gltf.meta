@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a5641c8b2ea33864c910586d27a059e3
+guid: 0777b2328355be84c939f894f93cab3f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -26,20 +26,20 @@ ScriptedImporter:
     sceneObjectCreation: 2
   assetDependencies:
   - type: 0
-    originalUri: Assets\Models\scene.bin
-    assetPath: Assets\Models\scene.bin
+    originalUri: Assets\Models\Helmet\scene.bin
+    assetPath: Assets\Models\Helmet\scene.bin
   - type: 1
-    originalUri: Assets\Models\textures\material_0_baseColor.png
-    assetPath: Assets\Models\textures\material_0_baseColor.png
+    originalUri: Assets\Models\Helmet\textures\material_0_baseColor.png
+    assetPath: Assets\Models\Helmet\textures\material_0_baseColor.png
   - type: 1
-    originalUri: Assets\Models\textures\material_0_metallicRoughness.png
-    assetPath: Assets\Models\textures\material_0_metallicRoughness.png
+    originalUri: Assets\Models\Helmet\textures\material_0_metallicRoughness.png
+    assetPath: Assets\Models\Helmet\textures\material_0_metallicRoughness.png
   - type: 1
-    originalUri: Assets\Models\textures\material_0_normal.png
-    assetPath: Assets\Models\textures\material_0_normal.png
+    originalUri: Assets\Models\Helmet\textures\material_0_normal.png
+    assetPath: Assets\Models\Helmet\textures\material_0_normal.png
   - type: 1
-    originalUri: Assets\Models\textures\material_0_clearcoat.png
-    assetPath: Assets\Models\textures\material_0_clearcoat.png
+    originalUri: Assets\Models\Helmet\textures\material_0_clearcoat.png
+    assetPath: Assets\Models\Helmet\textures\material_0_clearcoat.png
   reportItems:
   - type: 2
     code: 20
