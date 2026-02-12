@@ -10,7 +10,7 @@ Library: C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstl
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Library\Burst
 --output=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -126,7 +126,7 @@ Library: C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstl
 --target-framework=NetFramework
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Library\Burst
 --output=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -218,7 +218,7 @@ Library: C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstl
 --float-mode=Fast
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.6f1/Editor/Data/PlaybackEngines/AndroidPlayer
+--key-folder=C:/Program Files/Unity/Hub/Editor/6000.3.0f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=C:\Users\mdra6379\Documents\saif\Berserk_VR\Library\Burst
 --output=C:\Users\mdra6379\Documents\saif\Berserk_VR\Temp\BurstOutput\tempburstlibs\arm64-v8a\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
