@@ -3,13 +3,16 @@ using UnityEngine.SceneManagement;
 
 public class FallReset : MonoBehaviour
 {
-    public GameObject gameOverCanvas; // Drag your canvas here
-    public float fallThreshold = -5f; // How low can you fall?
+    public GameObject gameOverCanvas; 
+    public float fallThreshold = -5f; 
+    
+    // Add this flag to stop the infinite loop
+    private bool isGameOver = false; 
 
     void Update()
     {
-        // 1. Check if we fell below the threshold
-        if (transform.position.y < fallThreshold)
+        // Only run if the game is NOT over yet
+        if (!isGameOver && transform.position.y < fallThreshold)
         {
             ShowGameOver();
         }
@@ -17,23 +20,22 @@ public class FallReset : MonoBehaviour
 
     void ShowGameOver()
     {
-        // Turn on the UI
+        isGameOver = true; // Lock it so it doesn't happen again
+
         if (gameOverCanvas != null)
         {
             gameOverCanvas.SetActive(true);
             
-            // Optional: Move the UI in front of the player's face so they can see it
-            // (Simply parenting it to the camera or teleporting it works best here)
+            // Move it once, then let it stay still so we can click it!
             gameOverCanvas.transform.position = transform.position + transform.forward * 2f + Vector3.up * 1f;
             gameOverCanvas.transform.LookAt(transform.position);
-            gameOverCanvas.transform.Rotate(0, 180, 0); // Flip it to face the player
+            gameOverCanvas.transform.Rotate(0, 180, 0); 
         }
     }
 
-    // Call this function from the Button
     public void RestartGame()
     {
-        // Reloads the current scene
+        Debug.Log("ATTEMPTING TO RELOAD SCENE...");
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
