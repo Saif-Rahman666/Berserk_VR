@@ -9,6 +9,23 @@ public class FallReset : MonoBehaviour
     // Add this flag to stop the infinite loop
     private bool isGameOver = false; 
 
+    void Start()
+    {
+        // 1. Force the player back to the center of the world
+        transform.position = Vector3.zero;
+        transform.rotation = Quaternion.identity;
+
+        // 2. Stop any falling physics immediately
+        Rigidbody rb = GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector3.zero;
+            rb.angularVelocity = Vector3.zero;
+            rb.isKinematic = false; // Make sure physics is on
+        }
+        
+        Debug.Log("Player Position Reset to Zero.");
+    }
     void Update()
     {
         // Only run if the game is NOT over yet
@@ -20,16 +37,22 @@ public class FallReset : MonoBehaviour
 
     void ShowGameOver()
     {
-        isGameOver = true; // Lock it so it doesn't happen again
+        isGameOver = true; 
 
         if (gameOverCanvas != null)
         {
+            // 1. Activate the Canvas
             gameOverCanvas.SetActive(true);
+
+            // 2. PARENT it to the Camera so it falls WITH you
+            Transform head = Camera.main.transform;
+            gameOverCanvas.transform.SetParent(head);
+
+            // 3. Position it 2 meters in front of your face
+            gameOverCanvas.transform.localPosition = new Vector3(0, 0, 2f);
             
-            // Move it once, then let it stay still so we can click it!
-            gameOverCanvas.transform.position = transform.position + transform.forward * 2f + Vector3.up * 1f;
-            gameOverCanvas.transform.LookAt(transform.position);
-            gameOverCanvas.transform.Rotate(0, 180, 0); 
+            // 4. Reset rotation so it faces you directly
+            gameOverCanvas.transform.localRotation = Quaternion.identity; 
         }
     }
 
